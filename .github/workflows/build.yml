@@ -1,0 +1,39 @@
+name: BC AL Build and Test
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup BC Container
+      uses: microsoft/AL-Go-Actions/setup@v3
+      with:
+        version: 'latest'
+    
+    - name: Build AL Extension
+      run: |
+        # Add your AL build commands here
+        # Example: alc.exe /project:"./src" /packagecachepath:"./.alpackages" /out:"./output"
+        Write-Host "Building AL extension..."
+      shell: pwsh
+    
+    - name: Run AL Tests
+      run: |
+        # Add your AL test commands here
+        Write-Host "Running AL tests..."
+      shell: pwsh
+    
+    - name: Upload Build Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: al-extension
+        path: ./output/*.app
+        if-no-files-found: warn

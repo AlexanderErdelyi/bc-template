@@ -1,0 +1,76 @@
+{
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.rulers": [120],
+    "editor.wordWrap": "on",
+    
+    // AL Language specific settings
+    "al.enableCodeActions": true,
+    "al.enableCodeAnalysis": true,
+    "al.codeAnalyzers": [
+        "${AppSourceCop}",
+        "${CodeCop}",
+        "${PerTenantExtensionCop}",
+        "${UICop}"
+    ],
+    "al.ruleSetPath": "./.vscode/ruleset.json",
+    "al.enableExternalRulesets": true,
+    
+    // AL Code Actions
+    "al.assemblyProbingPaths": [
+        "./.netpackages"
+    ],
+    
+    // File associations
+    "files.associations": {
+        "*.al": "al"
+    },
+    
+    // Files to exclude from workspace
+    "files.exclude": {
+        "**/.git": true,
+        "**/.alpackages": true,
+        "**/rad.json": true,
+        "**/.vscode/.alcache": true
+    },
+    
+    // Search exclusions
+    "search.exclude": {
+        "**/.alpackages": true,
+        "**/rad.json": true
+    },
+    
+    // Git settings
+    "git.ignoreLimitWarning": true,
+    
+    // Copilot settings
+    "github.copilot.enable": {
+        "*": true,
+        "al": true,
+        "markdown": true
+    },
+    
+    // Spell checker
+    "cSpell.words": [
+        "Codeunit",
+        "Codeunits",
+        "Dataverse",
+        "XMLport",
+        "XMLports"
+    ],
+    "cSpell.enableFiletypes": [
+        "al"
+    ],
+    
+    // Markdown
+    "markdown.extension.toc.levels": "2..6",
+    
+    // Terminal
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    
+    // AL Formatter settings
+    "alFormatter.alignProperty": true,
+    "alFormatter.alignVariable": true
+}
