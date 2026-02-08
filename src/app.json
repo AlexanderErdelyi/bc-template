@@ -1,0 +1,33 @@
+{
+    "id": "00000000-0000-0000-0000-000000000000",
+    "name": "YourExtensionName",
+    "publisher": "YourCompanyName",
+    "version": "1.0.0.0",
+    "brief": "Brief description of your extension",
+    "description": "Detailed description of what this extension does",
+    "privacyStatement": "https://yourcompany.com/privacy",
+    "EULA": "https://yourcompany.com/eula",
+    "help": "https://yourcompany.com/help",
+    "url": "https://yourcompany.com",
+    "logo": "./logo.png",
+    "dependencies": [],
+    "screenshots": [],
+    "platform": "1.0.0.0",
+    "application": "22.0.0.0",
+    "idRanges": [
+        {
+            "from": 50100,
+            "to": 50149
+        }
+    ],
+    "features": [
+        "NoImplicitWith"
+    ],
+    "resourceExposurePolicy": {
+        "allowDebugging": true,
+        "allowDownloadingSource": false,
+        "includeSourceInSymbolFile": false
+    },
+    "runtime": "11.0",
+    "target": "Cloud"
+}

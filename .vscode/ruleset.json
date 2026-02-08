@@ -1,0 +1,71 @@
+{
+    "name": "BC Project Ruleset",
+    "description": "Custom ruleset for Business Central project",
+    "rules": [
+        {
+            "id": "AA0001",
+            "action": "Warning",
+            "justification": "There must be exactly one space character on each side of a binary operator."
+        },
+        {
+            "id": "AA0005",
+            "action": "Warning",
+            "justification": "Only use BEGIN..END to enclose compound statements."
+        },
+        {
+            "id": "AA0008",
+            "action": "Warning",
+            "justification": "Function calls should have parenthesis even if they do not have any parameters."
+        },
+        {
+            "id": "AA0074",
+            "action": "Warning",
+            "justification": "TextConst variable names should have approved suffix."
+        },
+        {
+            "id": "AA0137",
+            "action": "Warning",
+            "justification": "Do not declare variables that are unused."
+        },
+        {
+            "id": "AA0150",
+            "action": "Warning",
+            "justification": "Do not declare parameters that are unused."
+        },
+        {
+            "id": "AA0161",
+            "action": "Warning",
+            "justification": "Only use ASSERTERROR in Test Codeunits."
+        },
+        {
+            "id": "AA0175",
+            "action": "Warning",
+            "justification": "Only find record if you need to use it."
+        },
+        {
+            "id": "AA0198",
+            "action": "Warning",
+            "justification": "Do not use identical names for local and global variables."
+        },
+        {
+            "id": "AA0203",
+            "action": "Warning",
+            "justification": "Use Get(), FindFirst() and FindLast() without Next() method."
+        },
+        {
+            "id": "AA0204",
+            "action": "Warning",
+            "justification": "To avoid confusion, do not give local variables the same name as fields, methods, or actions in the same scope."
+        },
+        {
+            "id": "AA0206",
+            "action": "Warning",
+            "justification": "The value assigned to a variable must be used."
+        },
+        {
+            "id": "AA0231",
+            "action": "Warning",
+            "justification": "StrSubstNo() or String Format() should not use placeholders that do not exist in the text."
+        }
+    ]
+}
